@@ -28,6 +28,10 @@
 #ifndef BAM_BAM_H
 #define BAM_BAM_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*!
   @header
 
@@ -759,5 +763,8 @@ static inline int bam_aux_type2size(int x)
 	else return 0;
 }
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif
